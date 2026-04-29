@@ -11,6 +11,8 @@
      <link rel="stylesheet" href="css/main.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/test.js"></script>
+    <script src="js/test2.js"></script>
+    
 
     <script>
         window.onload = function() {
@@ -53,47 +55,53 @@
         </div>
     </nav> -->
 
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    <img src="/images/롤 로고.png" alt="" width="30" height="24">
+    <!-- [변경] "Navbar" 텍스트 → 다크/라이트 토글 버튼-->
+    <button class="btn border-0" id="themeToggleBtn" onclick="toggleTheme()">
+        🌙DARK
+    </button>
+
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center flex-grow-1">              
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">뉴스</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">챔피언</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="main_page_sub/download.html">다운로드</a>
-            </li> 
-            <li class="nav-item">
+              </li> 
+              <li class="nav-item">
                 <a class="nav-link" href="#">로그인</a>
-            </li>
-            <li class="nav-item dropdown">
+              </li>
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                외부웹사이트
+                 외부웹사이트
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://lol.ps"target="blank">롤전적</a></li>
-                <li><a class="dropdown-item" href="#">불법사이트</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">외부웹</a></li>
+                    <li><a class="dropdown-item" href="https://op.gg/ko">롤 전적</a></li>
+                    <li><a class="dropdown-item" href="#">불법 사이트</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://www.leagueoflegends.com/ko-kr/">공식사이트</a></li>
                 </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
             </ul>
-            <form class="d-flex" id="searchForm">
-                <input class="form-control me-2" type="search" placeholder="챔피언, 뉴스검색..."aria-label="Search" id="searchInput">
-                <button class="btnbtn-outline-success" type="submit">검색하기</button>
+            <form class="d-flex  ms-auto" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="챔피언, 뉴스 검색..." aria-label="Search" id="searchInput">
+                <button class="btn btn-outline-success" type="submit">검색하기</button>
             </form>
         </div>
-        </div>
+    </div>
     </nav>
 
     <!-- 히어로 배너 (Hero Banner) -->
@@ -287,6 +295,7 @@
     </section>
     
     <script src="js/search.js"></script>
-    
+    <script src="js/toggle.js"></script>
+     b
 </body>
 </html>

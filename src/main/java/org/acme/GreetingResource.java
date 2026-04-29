@@ -5,7 +5,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("/hello")
+@Path("/hello") //어노테이션
 public class GreetingResource {
 
     @GET
